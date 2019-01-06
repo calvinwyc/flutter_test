@@ -47,8 +47,12 @@ class Home extends StatelessWidget {
                 Tab(icon: Icon(Icons.panorama_fish_eye),),
                 Tab(icon: Icon(Icons.screen_lock_portrait),),
               ],
+              unselectedLabelColor: Colors.black12,
+              indicatorColor: Colors.black54,
+              indicatorSize: TabBarIndicatorSize.tab,
+              indicatorWeight: 2.0,
             ),
-            elevation: 1.0,
+            elevation: 0.0,
             actions: <Widget>[
               IconButton(
               icon: Icon(Icons.search),
