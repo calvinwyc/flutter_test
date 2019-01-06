@@ -76,10 +76,23 @@ class Home extends StatelessWidget {
             padding: EdgeInsets.zero,
             children: <Widget>[
               UserAccountsDrawerHeader(
-                accountName: Text('王俊凯', style: TextStyle(fontWeight:FontWeight.bold),),
-                accountEmail: Text('wangjunkai@tf.com'),
+                accountName: Text('王俊凯', style: TextStyle(fontWeight:FontWeight.bold,),),
+                accountEmail: Text('wangjunkai@tfboys.com'),
                 currentAccountPicture: CircleAvatar(
                   backgroundImage: NetworkImage('https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1546789747136&di=2b947e5dd9ad941e2c93b4d672d3ed37&imgtype=0&src=http%3A%2F%2Fimg.jxbond.com%2Fd%2Ffil%2Fp%2F2017%2F07%2F10%2F3575ps0lbgxcfxp.jpg'),
+                ),
+                decoration: BoxDecoration(
+                  color: Colors.blue[300],
+                  image: DecorationImage(
+                    image: NetworkImage('https://b-ssl.duitang.com/uploads/item/201503/21/20150321180005_atnTa.thumb.700_0.jpeg'),
+                    fit:BoxFit.fitWidth,
+                    alignment: Alignment.center,
+                    colorFilter: ColorFilter.mode(
+                      Colors.blue[300].withOpacity(0.6), 
+                      BlendMode.hardLight,
+                    )
+                  ),
+                  
                 ),
               ),
               ListTile(
